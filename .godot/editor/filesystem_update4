@@ -4,3 +4,6 @@ res://Ship.gd
 res://CharacterBody2D.gd
 res://Bullet.tscn
 res://scripts/Ship.gd
+res://Enemy.tscn
+res://scripts/Enemy.gd
+res://scripts/GameManager.gd

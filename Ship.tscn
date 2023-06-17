@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://dl33qra78b1wa"]
 
 [ext_resource type="Texture2D" uid="uid://b1lp5b66beusl" path="res://icon.svg" id="1_7mi6y"]
-[ext_resource type="Script" path="res://Ship.gd" id="1_wohrp"]
+[ext_resource type="Script" path="res://scripts/Ship.gd" id="1_jl70e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kgagt"]
 size = Vector2(122, 120)
 
 [node name="RigidBody2D" type="RigidBody2D"]
-script = ExtResource("1_wohrp")
+script = ExtResource("1_jl70e")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

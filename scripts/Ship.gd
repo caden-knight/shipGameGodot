@@ -22,7 +22,5 @@ func _process(_delta):
 func shoot():
 	var bullet = bulletRef.instantiate()
 	get_parent().add_child(bullet)
-	bullet.position.x = ship.position.x
-	bullet.position.y = ship.position.y - 100 
-	print("shoot")
+	bullet.position= Vector2(ship.position.x, ship.position.y - 100)
 	
