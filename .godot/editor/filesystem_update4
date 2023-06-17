@@ -1,0 +1,6 @@
+res://level_1.tscn
+res://Ship.tscn
+res://Ship.gd
+res://CharacterBody2D.gd
+res://Bullet.tscn
+res://scripts/Ship.gd

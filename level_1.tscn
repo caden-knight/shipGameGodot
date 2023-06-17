@@ -1,3 +1,7 @@
-[gd_scene format=3 uid="uid://c62dp6ifiaplq"]
+[gd_scene load_steps=2 format=3 uid="uid://c62dp6ifiaplq"]
+
+[ext_resource type="PackedScene" uid="uid://dl33qra78b1wa" path="res://Ship.tscn" id="1_eypo3"]
 
 [node name="Level1" type="Node2D"]
+
+[node name="RigidBody2D" parent="." instance=ExtResource("1_eypo3")]

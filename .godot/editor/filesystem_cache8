@@ -1,0 +1,9 @@
+fc8a56933c4b1c8d796fdb8f7a9f9475
+::res://::1686982159
+Bullet.gd::GDScript::-1::1686981057::0::1::::<>CharacterBody2D<>::
+Bullet.tscn::PackedScene::2013027851709858284::1686982159::0::1::::<><>::res://Bullet.gd<>uid://b1lp5b66beusl
+icon.svg::CompressedTexture2D::4235003204107546895::1686960714::1686960756::1::::<><>::
+level_1.tscn::PackedScene::7004644298231868130::1686982036::0::1::::<><>::uid://dl33qra78b1wa
+Ship.tscn::PackedScene::7990871451106327660::1686982160::0::1::::<><>::uid://b1lp5b66beusl<>res://scripts/Ship.gd
+::res://scripts/::1686982159
+Ship.gd::GDScript::-1::1686982159::0::1::::<>RigidBody2D<>::
