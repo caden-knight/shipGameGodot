@@ -1,13 +1,17 @@
 extends Node2D
 
-@onready var enemy_ref: PackedScene = preload("res://Enemy.tscn")
+@onready var enemy_ref: PackedScene = preload("res://scenes/Enemy.tscn")
+
+
+func _physics_process(delta: float) -> void:
+	pass
 
 func _on_enemy_spawner_timeout():
-	print("enemy")
 	spawnEnemy()
 	
 func spawnEnemy():
 	var enemy = enemy_ref.instantiate()
+	var randomX: float = randf_range(100.0, 1900.0)
 	add_child(enemy)
-	enemy.position = Vector2(400, 300)
-	print("enemy")
+	enemy.position = Vector2(randomX, 100)
+	

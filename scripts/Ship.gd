@@ -4,8 +4,7 @@ extends RigidBody2D
 @onready var ship: RigidBody2D = $"."
 @onready var shipSprite: = $Sprite2D
 @onready var mouseOffset: Vector2 = shipSprite.texture.get_size()
-
-@onready var bulletRef: PackedScene = preload("res://Bullet.tscn")
+@onready var bulletRef: PackedScene = preload("res://scenes/Bullet.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -18,6 +17,7 @@ func _process(_delta):
 	
 	if Input.is_action_just_pressed("Shoot"):
 		shoot()
+		
 
 func shoot():
 	var bullet = bulletRef.instantiate()
