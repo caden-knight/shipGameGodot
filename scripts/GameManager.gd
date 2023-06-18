@@ -2,6 +2,9 @@ extends Node2D
 
 @onready var enemy_ref: PackedScene = preload("res://scenes/Enemy.tscn")
 
+func _ready():
+#	hide the mouse
+	Input.set_mouse_mode(1)
 
 func _physics_process(delta: float) -> void:
 	pass

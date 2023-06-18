@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://3xejlpkbtka3"]
 
 [ext_resource type="Script" path="res://scripts/Bullet.gd" id="1_bmbbq"]
-[ext_resource type="Texture2D" uid="uid://b1lp5b66beusl" path="res://icon.svg" id="2_0cswe"]
+[ext_resource type="Texture2D" uid="uid://cuf7l5xooml33" path="res://assets/laser.png" id="2_vv6lt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dc8px"]
 size = Vector2(120, 118)
@@ -14,7 +14,10 @@ script = ExtResource("1_bmbbq")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_0cswe")
+texture_filter = 1
+position = Vector2(-3.8147e-06, -4.76837e-06)
+scale = Vector2(7.5, 7.5)
+texture = ExtResource("2_vv6lt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_dc8px")

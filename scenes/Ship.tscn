@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dl33qra78b1wa"]
 
-[ext_resource type="Texture2D" uid="uid://b1lp5b66beusl" path="res://icon.svg" id="1_7mi6y"]
 [ext_resource type="Script" path="res://scripts/Ship.gd" id="1_jl70e"]
+[ext_resource type="Texture2D" uid="uid://csw2ebtcwjlft" path="res://assets/spaceShip.png" id="2_ufysp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kgagt"]
 size = Vector2(122, 120)
@@ -12,7 +12,10 @@ script = ExtResource("1_jl70e")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_7mi6y")
+texture_filter = 1
+position = Vector2(-0.5, 0.5)
+scale = Vector2(7.5625, 7.4375)
+texture = ExtResource("2_ufysp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 0)
