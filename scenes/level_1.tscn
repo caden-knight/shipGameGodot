@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://c62dp6ifiaplq"]
+[gd_scene load_steps=4 format=3 uid="uid://c62dp6ifiaplq"]
 
 [ext_resource type="Script" path="res://scripts/GameManager.gd" id="1_vt6ii"]
 [ext_resource type="PackedScene" uid="uid://dl33qra78b1wa" path="res://scenes/Ship.tscn" id="2_ymu05"]
+[ext_resource type="PackedScene" uid="uid://bxqe4syutnlp" path="res://scenes/fall_zone.tscn" id="3_getya"]
 
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_vt6ii")
@@ -10,5 +11,11 @@ script = ExtResource("1_vt6ii")
 
 [node name="EnemySpawner" type="Timer" parent="."]
 autostart = true
+
+[node name="UpperFallZone" parent="." instance=ExtResource("3_getya")]
+position = Vector2(953, -163)
+
+[node name="LowerFallZone" parent="." instance=ExtResource("3_getya")]
+position = Vector2(957, 1300)
 
 [connection signal="timeout" from="EnemySpawner" to="." method="_on_enemy_spawner_timeout"]

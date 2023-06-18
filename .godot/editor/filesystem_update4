@@ -12,3 +12,5 @@ res://scenes/Ship.tscn
 res://scenes/Bullet.tscn
 res://scenes/Enemy.tscn
 res://scripts/Bullet.gd
+res://scenes/MissedZone.gd
+res://scenes/fall_zone.tscn

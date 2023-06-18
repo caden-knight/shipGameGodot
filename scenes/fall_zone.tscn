@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxqe4syutnlp"]
+
+[ext_resource type="Script" path="res://scenes/MissedZone.gd" id="1_8k5cw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mhnqp"]
+size = Vector2(1981, 145.5)
+
+[node name="FallZone" type="Area2D"]
+collision_layer = 8
+collision_mask = 6
+script = ExtResource("1_8k5cw")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2.08165e-12, 2.08165e-12)
+shape = SubResource("RectangleShape2D_mhnqp")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
