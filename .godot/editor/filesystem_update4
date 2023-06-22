@@ -6,3 +6,4 @@ res://scenes/Enemy.tscn
 res://scenes/ScoreLabel.gd
 res://scripts/Enemy.gd
 res://scripts/GameManager.gd
+res://Global/Global.gd
